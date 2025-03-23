@@ -32,13 +32,13 @@ Welcome to **Virtual Zoo**, a frontend project designed to provide an interactiv
 
 ## Screenshots
 ![first](https://github.com/user-attachments/assets/91198f66-0c67-4c9e-95a0-3ed396d507b8)
-
+<br><br>
 
 ![second](https://github.com/user-attachments/assets/67d2835c-1945-47c6-ae75-38046ea5f6bf)
-
+<br><br>
 
 ![third](https://github.com/user-attachments/assets/b86d10bd-bd64-486a-b8a5-e713c0e00991)
-
+<br><br>
 
 ![fourth](https://github.com/user-attachments/assets/f85dc316-ace0-49c0-8b19-3111e5ef174c)
 
