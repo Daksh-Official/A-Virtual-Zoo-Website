@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .carousel-container {
+      width: 520px; /* Adjust the width of the carousel as needed */
+      overflow: hidden;
+      margin: 50px auto;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      flex: 0 0 auto;
+      height: fit-content;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+    }
+
+    .tab {
+      width: 30px;
+      height: 5px;
+      background-color: #333;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    img{
+      width: 500px;
+      border-radius: 20px;
+      border:5px solid #f9ecb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <!-- Content for slide 1 -->
+        <img src="../assets/images/profile/profilemedia/lion1.jpg" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <!-- Content for slide 2 -->
+        <img src="../assets/images/profile/profilemedia/lion2.jpg" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <!-- Content for slide3-->
+        <img src="../assets/images/profile/profilemedia/lion3.jpg" alt="Slide 3">
+      </div>
+      
+      <div class="carousel-item">
+        <!-- Content for slide 4 -->
+        <img src="../assets/images/profile/profilemedia/lion4.jpg" alt="Slide 4">
+      </div>
+      
+      <div class="carousel-item">
+        <!-- Content for slide 5 -->
+        <img src="../assets/images/profile/profilemedia/lion5.jpg" alt="Slide 5">
+      </div>
+            
+      <div class="carousel-item">
+        <!-- Content for slide 6 -->
+        <img src="../assets/images/profile/profilemedia/lion6.jpg" alt="Slide 5">
+      </div>
+      
+      <!-- Add more .carousel-item elements for additional slides -->
+    </div>
+    <div class="tabs">
+      <div class="tab" onclick="changeTab(0)"></div>
+      <div class="tab" onclick="changeTab(1)"></div>
+      <div class="tab" onclick="changeTab(2)"></div>
+      <div class="tab" onclick="changeTab(3)"></div>
+      <div class="tab" onclick="changeTab(4)"></div>
+      <div class="tab" onclick="changeTab(5)"></div>
+
+      <!-- Add more tabs as needed -->
+    </div>
+  </div>
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const tabs = document.querySelectorAll('.tab');
+    let currentIndex = 0;
+
+    function changeTab(index) {
+      currentIndex = index;
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      const translateValue = -currentIndex * 100 + '%';
+      carousel.style.transform = 'translateX(' + translateValue + ')';
+    }
+
+    function nextTab() {
+      currentIndex = (currentIndex + 1) % tabs.length;
+      updateCarousel();
+    }
+
+    setInterval(nextTab, 2000); // Change slide every 2 seconds
+  </script>
+</body>
+</html>

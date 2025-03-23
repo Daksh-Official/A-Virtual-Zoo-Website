@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+    <style>
+        .cover{
+            background-image: url("./assets/images/cover.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 729px;
+        }         
+        .nav-link{
+          font-weight: bold;
+          margin-right: 20px;
+          font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 30px;
+        }
+        .ct{
+          color: white;
+          text-align: center;  
+          margin-top: 140px;
+        }           
+        .ct h1{
+          font-size:100px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: bold;
+          letter-spacing: 2px;
+        }  
+        .ct button{
+          background-color: transparent;
+          border:3px solid white;
+          font-size:30px;
+          font-weight: bold;
+          border-radius:8px;
+          margin-top: 50px;
+          transition: 0.5s;
+        }
+        .ct a{
+          padding: 8px 5px 8px 5px;
+          color:white;
+          text-decoration: none;
+        }
+        .ct button:hover{
+          background-color: white;
+
+        }
+        .ct a:hover{
+          color:rgb(1, 46, 3);
+          font-weight: bolder;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head> 
+  <body>
+    <div class="cover">
+      <nav class="navbar navbar-expand-lg"  style="background-color: transparent;">
+        <div class="container-fluid">
+          <a class="navbar-brand link-light" href="./index.html">Digital Safari</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div  id="navbarSupportedContent">
+      <ul class="nav justify-content-end nav-underline">
+        <li class="nav-item">
+          <a class="nav-link active link-light" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="./lobby.html">Lobby</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#">Ticket Counter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled link-light" aria-disabled="true"><s>Profile</s></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="ct">
+  <h3>Welcome to</h3>
+  <h1>Digital Safari</h1>
+  <p>"Embark on a Digital Safari: Explore the Wild Wonders of the nature!<br>Unleash the Wild Online: Your Virtual Zoo Adventure Awaits!"</p>
+  <button><a href="./lobby.html">EXPLORE</a></button>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

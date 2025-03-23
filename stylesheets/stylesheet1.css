@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.box{
+    background-image: url("../assets/images/lobbybanner.jpg");
+    background-size: 100%;
+    min-height:680px;
+    max-height: 680px;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0%, 100% 77%, 0% 100%);
+  }
+  .EN{
+    color:white;
+    text-align: left;
+    font-size:150px;
+    font-weight: 1000;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 35px;
+  }
+  .features{
+    color:white;
+    padding:10px;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+.features li{
+  font-size: 25px;
+  padding-bottom: 0px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ab1{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 1fr;
+}
+.aboutinfo,.facts{
+  font-size: 22px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 25px;
+  word-spacing: 5px;
+}
+.matchbox{
+   display: flex;
+   flex-direction: column;
+  margin:80px;
+  row-gap: 40px;
+}
+.box1,.box2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 80px;
+}
+.match{
+      width: 100%;
+      min-height: 190px;
+      text-align: center;
+      padding:50px 0px 50px 0px;
+      border: 5px solid black;
+      border-radius: 50%;
+      box-shadow: 10px 10px rgb(135, 134, 134);
+    }
+  h3{
+    margin: 0px;
+    padding: 0px;
+  }
+  .map{
+    background-image: url("../assets/images/map.jpg");
+    min-height: 632px;
+    background-repeat: no-repeat;     
+    margin:50px 17% 50px 18%;
+    border-radius:9px;
+  }
+  .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    }
+    .facts li{
+      background-color: rgb(209, 210, 210);
+      margin:25px ;
+      border-radius:25px;
+      font-weight: bold;
+    }
+    .board{
+      background-image: url("../assets/images/board.png");
+      background-repeat: no-repeat;
+      min-height: 700px;
+      background-size: 1600px 700px;
+      padding: 170px 250px 0px 250px;
+      color: rgb(255, 249, 237);
+  }
+    .end{
+      font-size: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      word-spacing: 5px;
+      text-align: center;
+      margin: 20px;
+    }
+    button{
+      text-align: center;
+      background-color: rgb(254, 46, 46);
+      margin: 30px 0px 80px 0px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 45px;
+      padding: 10px 15px 10px 15px;
+      color: white;
+      border-radius: 20px;
+      transition: 0.25s;
+    }
+    button:hover{
+      background-color: rgb(227, 4, 4);
+      font-size: 50px;
+    }
+    .popup {
+position: fixed;
+top: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, .7);
+display: grid;
+place-content: center;
+opacity: 0;
+pointer-events: none;
+transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+width: clamp(600px, 90vw, 500px);
+background-color: #fff;
+padding: clamp(1.5rem, 100vw, 3rem);
+box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+border-radius: .5em;
+opacity: 0;
+transform: translateY(20%);
+transition: 200ms ease-in-out opacity,
+            200ms ease-in-out transform;
+position: relative;
+}
+.popup h1 {
+position: absolute;
+top: 2rem;
+right: 2rem;
+line-height: 1;
+cursor: pointer;
+user-select: none;
+margin-bottom: 40px;
+}
+.popup h1:active {
+transform: scale(.9);
+}
+.popup-content h2{
+margin: 0px;
+font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bolder;
+font-size: 90px;
+text-align: center;
+}
+.showPopup {
+opacity: 1;
+transform: translateY(0);
+pointer-events: all;
+}

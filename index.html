@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inria+Sans:wght@700&family=Rubik+Maps&display=swap" rel="stylesheet">
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0px;
+  }
+  .common{
+    width: 100%;
+    max-height: 750px;
+  }
+  .explore{
+    width: 100%;
+    min-height: 50px;
+    color: white;
+    background-color: #009B4D;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 50px;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    padding: 5px;
+    transition: 0.25s;
+  }
+  .news{
+    margin-top: 45px;
+  }
+  .wnews{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+  .newsinfo h5{
+    font-size: small;
+    color: gray;
+    font-weight: bold;
+  }
+  .newsinfo b{
+    font-size: 23px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .newsinfo {
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-right: 25px;
+  }
+  .photo{
+    margin: 45px 0px 45px 0px; 
+  }
+  .active{
+    background-color: #FFCC00 !important;
+    font-weight: bold;
+  }
+  .non-active{
+    color:#009B4D !important;
+    font-weight: bold;
+  }
+  .explore:hover{
+    background-color: green;
+    font-size: 40px;
+  }
+  .card-body{
+    background-color: #FAF5E9;
+    border-radius: 8px;
+  }
+  .sug{
+    display: grid;
+    grid-template-rows:1fr 1fr;
+  }
+  .tab1,.tab2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .semi,.lion{
+    padding:20px 50px 20px 50px;
+    width:97%;
+    height:100px;
+    margin:10px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    font-size: 45px;
+    font-family: 'Archivo Black';
+    color: white;
+    text-shadow: 5px 5px black;
+    transition: 0.25s;
+    text-decoration: none;
+  }
+  .semi:hover,.lion:hover{
+    font-size: 40px;
+    opacity: 70%;
+  }
+  </style>  
+  </head>
+  <body>
+    <nav>
+      <div class="navbar" style="padding:10px 15px 10px 15px;background-color: #FAF5E9;">
+        <div class="nav1">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="margin-right: 100px;"><span class="navbar-toggler-icon"></span></button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
+        </div>
+        <div class="nav2">
+          <ul class="nav justify-content-center nav-pills red">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link non-active" href="lobby.html">Lobby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link non-active" href="#">Ticket Counter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"><s>profile</s></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="margin-right: 0px;">
+                <img src="./assets/images/logo1.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Digital Safari
+              </a>
+            </div>
+        </div>
+      </div>
+    </nav>
+      <nav class="navbar" style="background-color: #FAF5E9;">
+        <form class="container-fluid">
+          <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="search animals" aria-label="Username" aria-describedby="basic-addon1" style="background-color: #ffd735;border:2px solid #009B4D ;color: #009B4D;">
+            <span class="input-group-text" id="basic-addon1"><button class="btn btn-outline-success" type="submit">Search</button></span>
+          </div>
+        </form>
+      </nav>
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active common">
+            <img src="./assets/images/indexcarasouel/Slide1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item common">
+            <img src="./assets/images/indexcarasouel/Slide2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item common">
+            <img src="./assets/images/indexcarasouel/Slide3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item common">
+            <img src="./assets/images/indexcarasouel/Slide4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item common">
+            <img src="./assets/images/indexcarasouel/Slide5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item common">
+            <img src="./assets/images/indexcarasouel/Slide6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      
+      <div class="news">
+        <h1 style="text-align: center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 50px;">Latest News</h1><hr style="color: black;height:4px;">
+          <ul>
+            <li>
+              <div class="wnews">
+              <div class="newsinfo">
+              <h5>U.S. NEWS</h5>
+              <b>wolves released in Colorado as part of reintroduction plan</b><br>
+              The carnivores planned release in Colorado, voted for in a 2020 ballot measure, has sharpened divides between rural and urban residents.</div><div class="newsimages"><img src="./assets/images/news/news1.png" alt=""></div>
+              </div></li>
+              <li>  
+                <div class="wnews">
+                  <div class="newsinfo">           
+                <h5>WORLD</h5>
+                <b>Runaway kangaroo punches police officer in the face while being captured in Canada</b><br>
+                The kangaroo had escaped while being transferred between zoos and was spotted hopping down the side of a highway by bewildered motorists who shared videos on social media.</div> <div class="newsimages"><img src="./assets/images/news/news2.png" alt=""></div>
+                </div>
+              </li>
+              <li>
+                <div class="wnews">
+                  <div class="newsinfo">
+                <h5>ANIMAL NEWS</h5>
+                <b>Endangered blind sand mole rediscovered in South Africa after 87 years</b><br>
+                Scientists hope their rediscovery will help protect the De Winton's golden mole's habitat, which is threatened by diamond mining.</div>
+                <div class="newsimages"><img src="./assets/images/news/news3.png" alt=""></div>
+                </div>
+              </li>
+              <li>   
+                <div class="wnews">
+                  <div class="newsinfo">            
+                <h5>WORLD</h5>
+                <b>A critically endangered Sumatran rhino named Delilah successfully gives birth in Indonesia</b><br>
+                Delilah gave birth to a 55-pound male calf at a sanctuary for Sumatran rhinos in Way Kambas National Park in Lampung province, at the southern tip of Sumatra island. </div><div class="newsimages"><img src="./assets/images/news/news4.png" alt=""></div>
+                </div>
+              </li>
+              <li>
+                <div class="wnews">
+                  <div class="newsinfo">
+                <h5>ANIMAL NEWS</h5>
+                <b>Colombia starts sterilizing hippos descended from pets of drug kingpin Pablo Escobar</b><br>
+                 The government is trying to control the population of more than 100 of the mammals that roam around unsupervised in some rivers.</div>
+                 <div class="newsimages"><img src="./assets/images/news/news5.png" alt=""></div></div>
+              </li>
+              <li>      
+                <div class="wnews">
+                  <div class="newsinfo">    
+                <h5>ANIMAL NEWS</h5>
+                <b>The body of a Colorado hiker missing for months was discovered —with his dog waiting by his side</b><br>
+                The Jack Russell terrier has been reunited with the 71-year-old hiker's family.</div> <div class="newsimages"><img src="./assets/images/news/news6.png" alt=""></div></div>
+              </li>
+          </ul>
+      </div>
+      </div><hr style="color: black;">
+      <h1 style="text-align: center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 50px;">catalouge</h1><hr style="color: black;height:4px;">
+      <div class="row row-cols-2 row-cols-md-4 g-4" style="margin:0px 0px 15px 0px;padding: 0px 0px 20px 0px;background-color: #FFCC00;">
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/carnivour.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Carnivorous</h5>
+              <p class="card-text">Carnivorous animals, like lions and eagles, primarily consume meat for sustenance. Their sharp teeth and predatory instincts make them efficient hunters, playing crucial roles in maintaining ecological balance.</p>
+              <button class="explore">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/endangered.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Endangered</h5>
+              <p class="card-text">Many animals face endangerment due to habitat loss, poaching, and climate change. Iconic species like tigers, elephants, and rhinos are at risk, highlighting the urgent need for conservation efforts.</p>
+              <button class="explore">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/aquatic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aquatic</h5>
+              <p class="card-text">Aquatic animals, adapted to life in water, showcase remarkable diversity. From graceful dolphins to elusive octopuses,and all their unique adaptations thrive in oceans, ponds, lakes, and rivers, shaping aquatic ecosystems.<br></p>
+              <button class="explore" style="margin-top: 7px;">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/prehistoric.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">pre-historic</h5>
+              <p class="card-text">Prehistoric animals, like dinosaurs and mammoths, roamed Earth millions of years ago. Fossil evidence reveals fascinating glimpses into their diverse and ancient ecosystems.</p>
+              <button class="explore">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/herbivour.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Herbivorous</h5>
+              <p class="card-text">Herbivorous animals primarily consume plants for sustenance. Examples include cows, rabbits, and elephants. Their digestive systems are adapted to extract nutrients from plant material.</p>
+              <button class="explore">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/pet.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pets</h5>
+              <p class="card-text">Pets bring joy and companionship to our lives. Dogs, cats, and other animals offer unconditional love, promoting emotional well-being and creating lasting bonds with their human families.</p>
+              <button class="explore">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/sky.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Birds</h5>
+              <p class="card-text">Birds, nature's avian wonders, grace the skies with vibrant plumage and melodic tunes. From agile hummingbirds to majestic eagles, their diverse species embody freedom and environmental harmony.</p>
+              <button class="explore">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./assets/images/catalouge/invertebrate.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Invertebrate</h5>
+              <p class="card-text">Invertebrates are animals lacking a backbone, encompassing a vast diversity from insects to mollusks. They play crucial roles in ecosystems, exhibiting remarkable adaptability and evolutionary success.</p>
+              <button class="explore">EXPLORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="photo">
+        <h1 style="text-align: center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 50px;">PhotoGallery</h1><hr style="color: black;height:4px;">
+        <div style="background-image:url(assets/images/bga2.jpg);width: 100%;"><iframe src="./components/photogallery.html" frameborder="0" scrolling="no" width="100%" height="850px"></iframe></div>
+      </div>
+      <h1 style="text-align: center;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 50px;">Suggested Animals</h1><hr style="color: black;height:4px;">
+      <div class="sug">
+        <div class="tab1">
+          <div class="semi-tab1"><button class="semi semi-button1" style="background-image: url(./assets/images/background/suggestions/savanabg.jpg);"><a href="./animal profiles/lionprofile.html" class="lion">Lion</a></button></div>
+          <div class="semi-tab2"><button class="semi semi-button2" style="background-image: url(./assets/images/background/suggestions/oceanbg.jpg);"><a href="./animal profiles/whaleprofile.html" class="lion">Blue Whale</a></button></div>
+        </div>
+        <div class="tab2">
+          <div class="semi-tab3"><button class="semi semi-button3" style="background-image: url(./assets/images/background/suggestions/skybg.jpg);">Eagle</button></div>
+          <div class="semi-tab4"><button class="semi semi-button4" style="background-image: url(./assets/images/background/suggestions/junglebg.jpg);">dinosaur</button></div>
+        </div>
+      </div>
+      <hr style="color: black;">
+      <iframe src="./components/footer.html" frameborder="0" width="100%" height="1280px" scrolling="no" style="padding: 0px;margin:0px;"></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

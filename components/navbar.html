@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        *{
+        box-sizing: border-box;
+      }
+      body{
+        margin: 0px;
+      }
+      input[type="search"]{
+        background-color: #f6d13e;
+        border: 2px solid #009B4D;
+      }
+      .active{
+        background-color: #FFCC00 !important;
+        font-weight: bold;
+      }
+      .non-active{
+        color:#009B4D !important;
+        font-weight: bold;
+      }
+      </style>
+  </head>
+  <body>
+    <nav>
+        <div class="navbar" style="padding:10px 15px 10px 15px;background-color: #FAF5E9;">
+          <div class="nav1">
+            <span>
+              <nav class="navbar">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+          </span> 
+          </div>
+          <div class="nav2">
+            <ul class="nav justify-content-center nav-pills">
+              <li class="nav-item">
+                <a class="nav-link non-active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link non-active" href="../lobby.html">Lobby</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link non-active" href="#">Ticket Counter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true">profile</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav3">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="margin-right: 0px;">
+                  <img src="../assets/images/logo2.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  Digital Safari
+                </a>
+              </div>
+          </div>
+        </div>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
